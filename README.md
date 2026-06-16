@@ -1,5 +1,7 @@
 # DeepSkill
 
+[中文文档](README_CN.md)
+
 **A battle-tested AGENTS.md skill file for DeepSeek V4 Pro — engineering discipline that turns AI coding assistants from "fast but sloppy" into "right the first time".**
 
 ---
