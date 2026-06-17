@@ -13,8 +13,8 @@ Complete a thorough risk assessment and impact analysis before writing any code.
 - [ ] After receiving a task, read all related code completely and map the impact scope
 - [ ] List "potential chain-reaction problems from this change" and assess each one
 - [ ] Answer three questions: **What could break? What are the hidden assumptions? What are the edge cases?**
-- [ ] Before large-scale changes, validate the full "modify 鈫?compile 鈫?verify" cycle on a single function first
-- [ ] Only proceed broadly after confirming feasibility 鈥?never change everything at once then compile
+- [ ] Before large-scale changes, validate the full "modify → compile → verify" cycle on a single function first
+- [ ] Only proceed broadly after confirming feasibility — never change everything at once then compile
 - [ ] Before starting any new task, review the "known pitfalls checklist"
 
 ### Anti-Patterns
@@ -58,7 +58,7 @@ When facing batch modifications, prioritize precision over speed. Correctness co
 ### Checklist
 
 - [ ] Before replacing, use grep to count expected matches
-- [ ] After replacing, use grep to count actual replacements 鈥?numbers must match
+- [ ] After replacing, use grep to count actual replacements — numbers must match
 - [ ] Use exact string matching over regex when possible
 - [ ] Modify function-by-function rather than global replace when possible
 - [ ] When same-named identifiers exist in different scopes, handle each function individually
@@ -105,8 +105,8 @@ Clear all instances of a problem class in one pass. Raise the definition of "don
 
 - [ ] "Done" means: tool-scanned confirmation that nothing was missed
 - [ ] When encountering one problem, immediately search for "are there other instances of this class?"
-- [ ] Use grep/glob for comprehensive search 鈥?don't just fix what's in front of you
-- [ ] Identify all sub-tasks at the requirements stage (e.g., renaming 鈫?v-variables, a-parameters, register names, Hungarian notation 鈥?all covered)
+- [ ] Use grep/glob for comprehensive search — don't just fix what's in front of you
+- [ ] Identify all sub-tasks at the requirements stage (e.g., renaming → v-variables, a-parameters, register names, Hungarian notation — all covered)
 - [ ] Before ending each step, run a full scan to confirm zero residuals
 
 ### Anti-Patterns
@@ -119,7 +119,7 @@ Clear all instances of a problem class in one pass. Raise the definition of "don
 
 ## Core Principle
 
-> **Think 鈫?Do once 鈫?Verify 鈫?Done**
+> **Think → Do once → Verify → Done**
 
 - **Slow is fast**: Getting it right once costs far less than rework
 - **Replacing thinking with execution is the root of all problems**
